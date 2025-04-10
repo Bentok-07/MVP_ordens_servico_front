@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Ordens de Serviço</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ordens de Serviço</h1>
+
+    <!-- Formulário para nova ordem -->
+    <section class="form-section">
+      <h2>Nova Ordem</h2>
+      <form id="form-ordem">
+        <label for="numero_equipamento">Nº do Equipamento:</label>
+        <input type="number" id="numero_equipamento" required />
+
+        <label for="descricao_problema">Descrição do Problema:</label>
+        <textarea id="descricao_problema" required></textarea>
+
+        <button type="submit">Cadastrar Ordem</button>
+      </form>
+    </section>
+
+    <!-- Lista de ordens em aberto -->
+    <section class="lista-section">
+      <h2>Ordens em Aberto</h2>
+      <ul id="lista-ordens"></ul>
+    </section>
+
+    <!-- Lista de ordens fechadas -->
+    <section class="lista-section">
+      <h2>Ordens Fechadas</h2>
+      <ul id="lista-ordens-fechadas"></ul>
+    </section>
+  </div>
+
+  <!-- Modal para solução -->
+  <div id="modal-solucao" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3>Fechar Ordem</h3>
+      <form id="form-solucao">
+        <input type="hidden" id="solucao_ordem_id" />
+        <label for="descricao_solucao">Descrição da Solução:</label>
+        <textarea id="descricao_solucao" required></textarea>
+        <button type="submit">Salvar Solução</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
