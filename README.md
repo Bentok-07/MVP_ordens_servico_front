@@ -36,7 +36,7 @@ A aplicação consome a API construída com Flask e exibe uma SPA (Single Page A
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Bentok-07/ordens_servico_front.git
+git clone https://github.com/Bentok-07/MVP_ordens_servico_front.git
 ```
 
 2. Navegue até a pasta do projeto:
